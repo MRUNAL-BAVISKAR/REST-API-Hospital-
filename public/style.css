@@ -1,0 +1,99 @@
+body {
+    background-color: #333333;
+}
+
+.first {
+    color: #39ace7;
+}
+
+.all {
+    background-color: cornsilk;
+    border-radius: 25px;
+    border: solid black 2px;
+}
+
+.patient_name {
+    color: crimson;
+    margin-left: 20px;
+
+}
+
+.patient_age {
+    color: green;
+    margin-left: 20px;
+
+}
+
+.patient_city {
+    margin-left: 20px;
+}
+
+.patient_problem {
+    margin-left: 20px;
+}
+
+.detail_button {
+    margin-left: 20px;
+}
+
+.create {
+    margin-left: 20px;
+    margin-top: 10px;
+    padding: 5px 10px 5px 10px;
+    color: black;
+    background-color: #FF9800;
+    border: 2px solid black;
+    border-radius: 25px;
+}
+
+.submit {
+    background-color: #4CAF50;
+    padding: 5px 20px 5px 20px;
+    border: 2px solid black;
+    border-radius: 25px;
+}
+
+.text {
+    background-color: cornsilk;
+    border-radius: cornsilk;
+}
+
+.Delete {
+    margin-left: 85%;
+    background-color: #ff0f0f;
+    padding: 5px 20px 5px 20px;
+    border: 2px solid black;
+    border-radius: 25px;
+
+}
+
+.see {
+    background-color: yellowgreen;
+    padding: 5px 10px 5px 10px;
+    border: 2px solid black;
+    border-radius: 25px;
+}
+
+.edit {
+    background-color: darksalmon;
+    margin-left: 50px;
+    padding: 5px 25px 5px 20px;
+    border: 2px solid black;
+    border-radius: 25px;
+}
+
+.new {
+    padding: 5px 25px 5px 20px;
+    border: 2px solid black;
+    border-radius: 25px;
+}
+
+.N_Name,
+.N_Age,
+.N_City,
+.N_Problem {
+    padding: 5px 25px 5px 20px;
+    border: 2px solid black;
+    border-radius: 25px;
+    background-color: cornsilk;
+}

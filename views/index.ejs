@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Patients</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <h1 class="first">Patients Information</h1>
+    <br>
+    <% for(info of patients) { %>
+        <div class="all">
+            <h4 class="patient_name">Name: <%= info.name %>
+            </h4>
+            <h3 class="patient_city">City: <%= info.city %>
+            </h3>
+            <h3 class="patient_age">Age: <%= info.age %>
+            </h3>
+            <h3 class="patient_problem">Problem: <%= info.problem %>
+            </h3>
+            <br>
+            <div class="detail_button">
+                <a href="http://localhost:8080/patients/<%=info.id%>" class="see">See in Detail</a>
+                <a href="http://localhost:8080/patients/<%=info.id%>/edit" class="edit">Edit</a>
+                <form method="post" action="/patients/<%= info.id%>?_method=DELETE">
+                    <button class="Delete">Delete</button>
+                </form>
+
+            </div>
+
+        </div>
+        <% }%>
+            <br>
+
+            <button type="button" class="create"> <a href="http://localhost:8080/patients/new">Create a New
+                    ID</a></button>
+</body>
+
+</html>

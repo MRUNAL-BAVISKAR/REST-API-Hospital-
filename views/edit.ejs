@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Form of Patient</title>
+    <link rel="stylesheet" href="/style.css">
+
+</head>
+
+<body>
+    <h1 class="first">Edit Patient Detail</h1>
+    <h3> Patient Id: <%= patient.id %>
+    </h3>
+    <h3> Patient Name: <%= patient.name %>
+    </h3>
+    <form method="post" action="/patients/<%= patient.id %>?_method=PATCH">
+        <textarea rows="10" cols="40" name="problem" class="text"><%= patient.problem %></textarea>
+        <br>
+        <button class="submit" style="margin-left: 230px;">Submit</button>
+    </form>
+</body>
+
+</html>

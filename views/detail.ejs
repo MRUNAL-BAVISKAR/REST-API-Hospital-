@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details of Patients</title>
+    <link rel="stylesheet" href="/style.css">
+
+</head>
+
+<body>
+    <h1 class="first">Individual Patient Detail</h1>
+    <h3> Patient Id: <%= patient.id %>
+    </h3>
+    <div class="all">
+        <h3 class="patient_name">Name:<%= patient.name %>
+        </h3>
+        <h3 class="patient_city">City:<%= patient.city %>
+        </h3>
+        <h3 class="patient_age">Age:<%= patient.age %>
+        </h3>
+        <h3 class="patient_problem">Problem:<%= patient.problem %>
+        </h3>
+    </div>
+</body>
+
+</html>
